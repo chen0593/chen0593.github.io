@@ -1,0 +1,430 @@
+ /*http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*CSS clearfix*/
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/*
+	Colour Palette
+	
+	Primary White: #ffffff;
+	Secondary blue: #72a9ae ;
+	Footer black: #454545 ;
+	Font Black: #000000 ;
+	Font White: #ffffff ;
+*/
+
+
+/***********************
+		Mobile First
+************************/
+.overlay-container {
+			display: none;
+			position: fixed;
+			width: 100%;
+			height: 100%;
+			background: rgba(0,0,0,1);
+			z-index: 2;
+		}
+
+.loader {
+
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			width: 0;
+     		height: 0;
+     		border-top: 100px solid red;
+     		border-right: 100px solid transparent;
+			animation: 
+				spin 10s linear infinite,
+				change-color 4s linear infinite;
+			}
+
+@keyframes spin {
+			from {
+				transform: rotate(360deg);
+			}
+			to {
+				transform: rotate(0deg);
+			}
+		}
+
+@keyframes change-color {
+			0% {
+				border-color: darkred lime white white;
+			}
+
+			25% {
+				border-color: khaki indigo white white;
+				
+			}
+
+			50% {
+				border-color: dodgerblue orange white white;
+			}
+
+			75% {
+				border-color: ivory darkgrey white white;
+			}
+
+			100% {
+				border-color: darkred lime white white;
+			}
+		}
+
+
+p {
+	font-family: 'Poppins', sans-serif;
+	font-size: 10pt;
+}
+
+.main,.footer, img {
+	width: 100%;
+}
+
+/*header style*/
+header {
+	background: #ffffff;
+	height: 150px;
+}
+
+h1 {
+	box-sizing: border-box;
+	font-size: 26pt;
+	float: left;
+	color: #72a9ae;
+}
+
+
+.logo {
+	float: left;
+	box-sizing: border-box;
+	height: 105px;
+	line-height: 105px;
+	margin-left: 50px;
+	font-family: alice;
+}
+
+.desktop-nav {
+	float: left;
+	width: 100%;
+	max-width: 1025px;
+	display: none;
+	background-color: #72a9ae;
+}
+
+.desktop-nav ul {
+	box-sizing: border-box;
+}
+
+.desktop-nav li {
+	box-sizing: border-box;
+	height: 45px;
+	line-height: 45px;
+	float: left;
+	padding-left: 60px;
+}
+
+.main-nav a {
+	display: block;
+	text-decoration: none;
+	font-size: 12pt;
+	color: black;
+}
+
+.mobile-nav {
+	width:100%;
+	clear: both;
+}
+
+.mobile-nav-container {
+	position: relative;
+	clear: both;
+}
+
+.mobile-nav li {
+	box-sizing: border-box;
+	width:100%;
+	padding: 10px;
+	background: #6dcff6;
+	border-bottom: 2px solid #121212;
+
+}
+
+/*main content styles*/
+h2{
+	font-size: 16pt;
+	color: #72a9ae;
+	padding-bottom: 25px;
+	font-weight: bold;
+}
+
+.main {
+	background-image: url(../img/dynamic-style.png);
+}
+
+.site-content {
+	padding: 25px 50px 25px 50px;
+}
+.col-main {
+	width: 60%;
+	float: left;
+	box-sizing: border-box;
+}
+
+.site-sidebar {
+	width: 40%;
+	box-sizing: border-box;
+	float: left;
+	padding-top: 45px;
+	padding-left: 20px;
+}
+
+/*schedule styles*/
+.schedule-container {
+	padding: 25px 50px 25px 50px;
+}
+
+.table tr, td, th {
+	border: 1px solid black;
+}
+
+.table {
+	width: 100%;
+}
+
+th {
+	background-color: white;
+	color: #72a9ae;
+	font-weight: bold;
+	font-size: 14pt;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+}
+
+td {
+	font-size: 10pt;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+}
+
+tr:nth-child(even) {
+	background-color: #efefef;
+}
+
+/*Profile styles*/
+.profile-container {
+	padding: 25px 50px 25px 50px;
+}
+
+.editpro {
+	width: 35%;
+	box-sizing: border-box;
+	float: left;
+}
+
+.form li {
+	font-weight: bold;
+	height: 40px;
+}
+
+.form label {
+	line-height: 40px;
+}
+
+.form input, select {
+	float: right;
+	box-sizing: border-box;
+	width: 60%;
+	margin-top: 8px;
+	padding: 5px 10px;
+	border: 1px solid black;
+}
+
+.form button {
+	float:right;
+	margin-top: 8px;
+	padding: 5px 10px;
+	background-color: #ffffff;
+	border: 1px solid black;
+	font-weight: bold;
+}
+
+/*profile info*/
+.infopro {
+	box-sizing: border-box;
+	float: right;
+	margin-right: 50px;
+}
+.cc {
+	background-color: #ffffff;
+	box-shadow: 3px 5px 10px rgba(0,0,0,0.5);
+	padding: 20px 30px;
+}
+
+.infopro p {
+	text-align: center;
+	padding-top: 5px;
+}
+.ipname {
+	color: #72a9ae;
+	font-size: 16pt;
+}
+.fa-user {
+	border: 1px solid #72a9ae;
+	border-radius: 50%;
+	padding: 10px;
+}
+
+.fa-envelope {
+	padding-top: 5px;
+	color: #72a9ae;
+}
+
+
+/*footer content styles*/
+h3{
+	font-size: 16pt;
+	color: #ffffff;
+	padding: 15px;
+}
+
+footer {
+	height: 260px;
+	background: #454545;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 35px;
+
+}
+
+.foot-nav-container, .soc-med, .foot-add {
+	width: 33%;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+}
+
+.foot-nav ul {
+	display: inline-block;
+}
+.foot-nav li {
+	text-align: left;
+	padding: 10px;
+}
+
+.foot-nav a {
+	text-decoration: none;
+	color: #ffffff;
+}
+
+.foot-add {
+	color: #ffffff;
+}
+
+.soc-med a {
+	text-decoration: none;
+	padding: 5px;
+}
+
+.fb {
+	color: #3d5b99;
+	background-color: white;
+}
+
+.yt {
+	color: #ce1f2e;
+	background-color: white;
+}
+
+.tw {
+	color: #4facf2;
+	background-color: white;
+}
+/*address styles*/
+.foot-add ul {
+	display: inline-block;
+	padding-left: 80px;
+}
+.foot-add li {
+	text-align: left;
+	padding: 5px;
+}
+
+
+
+/*This media query targets, tablet and above*/
+@media only screen and (min-width: 768px) {
+	
+	/*header styles*/
+
+	/*the following css is used to restrict the content beyond 1280px*/
+	/*This is to make sure the main content is in the readbable area for large screen sizes*/
+	header, main, footer {
+
+		max-width: 1025px;
+		margin: 0 auto;
+
+	}
+
+	.desktop-nav {
+		display: block;
+	}
+
+	.mobile-nav {
+		display: none;
+	}
