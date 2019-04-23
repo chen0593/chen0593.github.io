@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+	<title>Final</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+	<div class="overlay-container loader-container" id="overlay-container">
+		<div class="loader"></div>
+	</div>
+	<!-- Header Start -->
+	<header class="header clearfix" id="home">
+		<div class="logo">
+			<h1>My Logo</h1>
+		</div>
+
+		<!-- Main Navigation Start -->
+		<nav class="main-nav-container desktop-nav">
+			<ul class="main-nav clearfix">
+				<li>
+					<a href="#home">HOME</a>
+				</li>
+				<li>
+					<a href="#about">ABOUT</a>
+				</li>
+				<li>
+					<a href="#schedule">SCHEDULE</a>
+				</li>
+				<li>
+					<a href="#portfolio">PORTFOLIO</a>
+				</li>
+				<li>
+					<a href="#contact">CONTACT</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- Main Navigation End -->
+		<div class="ham"></div>
+		<!-- Mobile Navigation Start -->
+		<div class="mobile-nav-container clearfix">
+			<nav class="main-nav-container mobile-nav">
+				<ul class="main-nav">
+					<li>
+						<a href="#home">HOME</a>
+					</li>
+					<li>
+						<a href="#about">ABOUT</a>
+					</li>
+					<li>
+						<a href="#schedule">SCHEDULE</a>
+					</li>
+					<li>
+						<a href="#portfolio">PORTFOLIO</a>
+					</li>
+					<li>
+						<a href="#contact">CONTACT</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<!-- Mobile Navigation End -->
+	</header>
+	<!-- Header End -->
+	<!-- Main Start -->
+	<main class="main clearfix" id="main">
+		<!-- Site Content Start -->
+		<section class="site-content clearfix" id="about">
+			<!-- Main Content Start -->
+			<article class="col-main">
+				<h2>ABOUT</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rutrum mauris eu leo venenatis, ac suscipit lectus suscipit. Ut elementum sagittis leo, in varius ante volutpat vitae. Quisque tempor congue convallis. Morbi tristique metus posuere bibendum finibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec venenatis, orci ut tincidunt aliquet, velit dolor finibus tellus, vitae consequat neque purus in velit. In hac habitasse platea dictumst.
+				<br>
+				<br>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis rutrum mauris eu leo venenatis, ac suscipit lectus suscipit. Ut elementum sagittis leo, in varius ante volutpat vitae. Quisque tempor congue convallis. Morbi tristique metus posuere bibendum finibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec venenatis, orci ut tincidunt aliquet, velit dolor finibus tellus, vitae consequat neque purus in velit. In hac habitasse platea dictumst.</p>
+			</article>
+			<!-- Main Content End -->
+			<!-- Sidebar Start -->
+			<aside class="site-sidebar">
+				<img src="img/img-1.jpg" alt="beach">
+			</aside>
+		</section>
+		<!-- Schedule Start -->
+		<section class="schedule-container" id="schedule">
+			<h2>SCHEDULE</h2>
+			<table class="table">
+				<tr>
+					<th>TIME</th>
+					<th>MONDAY</th>
+					<th>TUESDAY</th>
+					<th>WEDNESDAY</th>
+					<th>THURSDAY</th>
+					<th>FRIDAY</th>
+				</tr>
+				<tr>
+					<td>09:00 - 11:00</td>
+					<td>Communications I</td>
+					<td>Client Services</td>
+					<td>Special Collections</td>
+					<td>Directed Research Seminar</td>
+					<td>Client Services</td>
+				</tr>
+				<tr>
+					<td>11:00 - 12:30</td>
+					<td>Reference</td>
+					<td>Internet App</td>
+					<td>Library Software</td>
+					<td>French</td>
+					<td>Reference</td>
+				</tr>
+				<tr>
+					<td>14:00 - 15:00</td>
+					<td>Acquistions</td>
+					<td>General Elective</td>
+					<td>Marketing</td>
+					<td>Emerging Library Tech</td>
+					<td>Library Software</td>
+				</tr>
+				<tr>
+					<td>15:30 - 17:30</td>
+					<td>French</td>
+					<td>French</td>
+					<td>Acquistions</td>
+					<td>Subject Analysis</td>
+					<td>Internet App</td>
+				</tr>
+			</table>
+		</section>
+		<section class="profile-container clearfix" id="portfolio">
+			<article class="editpro">
+				<h2>EDIT PROFILE</h2>
+				<form class="form" id="profileForm" action="submit.php" method="post">
+					<ul>
+						<li>
+							<label>Name:</label>
+							<input type="text" required name="fname" id="fname" placeholder="John Doe">
+						</li>
+						<li>
+							<label>Email:</label>
+							<input type="email" required name="email" id="email" placeholder="johndoe@algonquincollege.com">
+						</li>
+						<li>
+							<label>Address</label>
+							<input type="text" required name="address" id="address" placeholder="1385 Woodroffe Ave.">
+						</li>
+						<li>
+							<label>City</label>
+							<input type="text" required name="city" id="city" placeholder="Nepean">
+						</li>
+						<li>
+							<label>Province</label>
+							<select name="province" required id="province">
+								<option value="" disabled selected hidden>Select Province</option>
+ 								<option value="BC">British Colombia</option>
+ 								<option value="AB">Alberta</option>
+ 								<option value="SK">Saskatchewan</option>
+ 								<option value="MB">Manitoba</option>
+ 								<option value="ON">Ontario</option>
+ 								<option value="QC">Quebec</option>
+ 								<option value="NB">New Brunswick</option>
+ 								<option value="PE">Prince Edward Island</option>
+ 								<option value="NS">Nova Scotia</option>
+ 								<option value="NF">Newfoundland & Labrador</option>
+ 								<option value="YK">Yukon</option>
+ 								<option value="NW">Northwest Territories</option>
+ 								<option value="NU">Nunavut</option>
+							</select>
+						</li>
+						<li>
+							<label>Postal Code</label>
+							<input type="text" required pattern="[A-Za-z][0-9][A-Za-z] [0-9][A-Za-z][0-9]" value="" name="pc" id="pc" placeholder="A0A 0A0">
+						</li>
+					</ul>
+					<button id="subbut" type="submit">SUBMIT</button>
+				</form>
+			</article>
+			<aside class="infopro">
+				<h2>PROFILE INFO</h2>
+				<div class="cc">
+					<p><i class="fas fa-user fa-5x"></i><p>
+					<p class="ipname" id="ipname">John Doe</p>
+					<p id="ipemail">johndoe@algonquincollege.com</p>
+					<p id="ipadd">1385 Woodroffe Ave, Nepean,</p>
+					<p id="ippc">ON, K2G 1V8</p>
+					<p><i class="far fa-envelope fa-2x"></i><p>
+				</div>
+			</aside>
+		</section>
+	</main>
+	<!-- Main Content End -->
+	<footer class="footer clearfix" id="contact">
+		<!-- footer nav -->
+		<section class="foot-nav-container">
+			<h3>QUICK LINKS</h3>
+			<nav class="foot-nav">
+				<ul>
+					<li>
+						<a href="#about">ABOUT</a>
+					</li>
+					<li>
+						<a href="#schedule">SCHEDULE</a>
+					</li>
+					<li>
+						<a href="#portfolio">PORTFOLIO</a>
+					</li>
+					<li>
+						<a href="#contact">CONTACT</a>
+					</li>
+				</ul>
+			</nav>
+		</section>
+		<!-- end of footer nav -->
+		<!-- Social Media -->
+		<section class="soc-med">
+			<h3>FOLLOW US</h3>
+			<div>
+				<a href="https://www.facebook.com"><i class="fab fa-facebook-square fa-3x fb"></i></a>
+				<a href="https://www.youtube.com"><i class="fab fa-youtube-square fa-3x yt"></i></a>
+				<a href="https://www.twitter.com"><i class="fab fa-twitter-square fa-3x tw"></i></a>
+			</div>
+		</section>
+		<!-- end of social media -->
+		<!-- address -->
+		<section class="foot-add">
+			<h3>ADDRESS</h3>
+			<ul>
+				<li>1385 Woodroffe Ave.</li>
+				<li>Nepean, ON K2G 1V8</li>
+				<li>Canada</li>
+			</ul>
+		</section>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
